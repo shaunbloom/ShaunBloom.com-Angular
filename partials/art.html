@@ -1,0 +1,13 @@
+<div id="close" class="scroll default art" ng-click="showArt = false"></div>
+<h1>Art</h1>
+<article ng-repeat="art in artData">
+  <img name="{{art.name}}" ng-src="{{art.thumbPath}}" ng-click="loadFullImage($event, art)"/>
+  <footer>{{art.title}} '{{art.year}}</footer>
+  <hr>
+  <div ng-if="art.purchase">
+  	<a href="{{art.smallpaper}}" class="purchase-link" target="_blank">{{art.linkText}}</a>
+  </div>
+   <div ng-if="!art.purchase">
+  	<span class="purchase-link-blank"><br></span>
+  </div>
+</article>

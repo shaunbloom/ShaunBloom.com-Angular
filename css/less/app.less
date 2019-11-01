@@ -1,0 +1,603 @@
+html {
+	overflow-y:scroll;	
+}
+
+.shaunbloomAngular {
+	background: url("http://images.shaunbloom.com//bg3.jpg") 0 0 #0a0a0a fixed;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif !important;
+	color: #FFF;
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: Verdana, Geneva, sans-serif !important;
+	}
+
+	img {
+		border:none;
+	}
+	a {
+		border:none;	
+	}
+	a:active, a:focus {
+		outline: none;
+	}
+
+	.framework-nav {
+		height: 37px;
+	    padding: 5px 0 5px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    margin-top: -37px;
+	    background-color: rgba(0, 0, 0, 0.5);
+
+	    &.loaded {
+	    	margin-top: 0px;
+			-webkit-transition: margin-top .7s ease;
+	    	-moz-transition: margin-top .7s ease;
+	    	-o-transition: margin-top .7s ease;
+			transition: margin-top .7s ease-in;
+	    }
+
+		ul {
+		    padding: 0;
+			margin: 0;
+			z-index: 1;
+				
+			li {
+				list-style-type: none;
+			    display: inline-block;
+			    width: 19%;
+			    margin: 0 auto;
+			    text-align: center;
+
+				a {
+					color: white;
+					text-decoration: none;
+					text-shadow: 4px 4px #000;
+					font-size: 13px;
+
+
+					&:hover {
+						color:red;			
+					}
+
+					&.selected {
+						font-weight: bold;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	#wrapper {
+		width:800px;
+		margin:0 auto;
+	}
+
+	.pageTitle {
+    	font-size: 1.4em;
+    	font-weight: bold;
+    	margin-bottom: 30px;
+	}
+
+	header.main-header {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+
+		nav ul {
+			margin: 0;
+    		padding: 0;
+
+			li {
+				display:inline-block;
+				font-size:30px;
+				font-weight:bold;
+				text-shadow: #000 5pt 5pt 3pt;
+				text-align:center;
+				padding:0 43px 0 0;
+				color: #FFF;
+	    		float: left;
+				*filter: glow(color=black,strength=5);
+
+				a {
+					text-decoration:none;
+						color:#FFF;
+
+					&:hover {
+						color:#F00;
+					}
+				}
+			}
+		}
+
+		&.fadeComplete {
+			opacity: 1;
+			top: -48px;
+
+			-webkit-transition: all .5s ease;
+		    -moz-transition: all .5s ease;
+		    -o-box-shadow: all .5s ease;
+			transition: all .5s ease-in;
+		}
+	}
+	
+	#content {
+		border: 1px solid #FFF;
+	    width: 700px;
+	    height: 0;
+	    display: block;
+	    z-index: 90;
+	    position: relative;
+	    margin: 242px auto 0;
+
+		&.drop-shadow {
+			-moz-box-shadow: 10px 10px 10px #000;
+			-webkit-box-shadow: 10px 10px 10px #000;
+			-o-box-shadow: 10px 10px 10px #000;
+			box-shadow: 0px 20px 100px #000;	
+		}
+
+		&.loaded {
+			height: 402px;
+		    -webkit-transition: height 2s ease;
+		    -moz-transition: height 2s ease;
+		    -o-box-shadow: height 2s ease;
+	    	transition: height 2s ease;
+		}
+
+		#background {
+			background-color: #000000;
+		    background-image: url("http://images.shaunbloom.com//face.png");
+		    background-repeat: no-repeat;
+		    opacity: 0;
+		    height: 400px;
+		    padding: 15px 25px;
+		    position: relative;
+		    width: 698px;
+		    background-position: 377px 0px;
+
+		    &.contentExpanded {
+			    opacity: 1;
+			    -webkit-transition: opacity 2s ease;
+			    -moz-transition: opacity 2s ease;
+			    -o-transition: opacity 2s ease;
+		    	transition: opacity 2s ease;
+
+		    }
+
+		    .showHome, .showContact {
+		    	visibility: visible;
+		    	opacity: 1;
+			    -webkit-transition: all 2s ease;
+			    -moz-transition: all 2s ease;
+			    -o-transition: all 2s ease;
+		    	transition: all 2s ease;
+		    }
+
+		    .hideHome, .hideContact {
+		    	visibility: hidden;
+		    	opacity: 0;
+			    -webkit-transition: all 2s ease;
+			    -moz-transition: all 2s ease;
+			    -o-transition: all 2s ease;
+		    	transition: all 2s ease;
+		    }
+
+		    #twinkle {
+			    background: url("http://images.shaunbloom.com//twinkle.png") repeat scroll 0 0 transparent;
+			    height: 85px;
+			    position: absolute;
+			    right: 122px;
+			    top: 85px;
+			    width: 75px;
+				opacity: 0;
+
+
+				&.headerPositioned {
+					opacity: 1;
+					-webkit-transition: opacity .7s ease;
+			    	-moz-transition: opacity .7s ease;
+			    	-o-transition: opacity .7s ease;
+					transition: opacity .7s ease;
+				}
+
+				&.twinkleVisible {
+					opacity: 0;
+					-webkit-transition: opacity .7s ease;
+			    	-moz-transition: opacity .7s ease;
+			    	-o-transition: opacity .7s ease;
+					transition: opacity .7s ease;
+				}
+			}
+		}
+
+		/******START HOME**********/
+		#home {
+			width:395px;
+
+			table {
+				border-collapse: separate;
+			    border-spacing: 2px;
+			    font-size: 1.6rem;
+			    line-height: 21px;
+			}
+		}
+		#home ul, #home ul li {
+			margin:0;
+			padding:0;
+		}
+		/*******END HOME***********/
+
+
+		/**START COMMON HOME & CONTACT**/
+		#home, #contactPage  {
+			font-size: 1.6rem;
+			td.name {
+				font-weight:bold;
+				line-height:40px;
+				vertical-align:top;
+				text-align:right;
+				padding-right: 5px;
+			}
+
+			td.value.pad {
+				padding-top:11px;
+			}
+		}
+		/**END COMMON HOME & CONTACT**/
+
+
+		/*****START CONTACT********/
+
+		#contactPage {
+			visibility: hidden;
+			opacity: 0;
+			position: absolute;
+			top: 18px;
+
+			td.name {
+				line-height:45px;
+			}
+
+			header.contact-header h1 {
+				margin-top:25px;
+				font-size: 1.17em;
+				font-weight: bold;
+			}
+
+			a {	
+			    color: #FFFFFF;
+			    text-decoration: none;
+
+			    &:hover {
+			    	text-decoration: underline;
+			    }
+			}
+
+			nav ul {
+				margin:0;
+				padding:0;
+
+				li {
+					display:inline-block;
+
+					a {
+						background: url("http://images.shaunbloom.com//icon-house.png") no-repeat scroll 0 0 transparent;
+				    	display: block;
+				    	height: 25px;
+				    	padding: 9px 0 0 33px;
+
+				    	&:hover {
+		    				background: url("http://images.shaunbloom.com//icon-house-on.png") no-repeat scroll 0 0 transparent;
+		    				text-decoration: underline;	
+						}
+					}
+				}	
+			}
+		}
+		/******END CONTACT*********/
+	}
+
+	/*******START ART********/
+
+	#artPage {
+		color: #666;
+
+		h1 {
+			margin-left: 50px;
+		}
+	}
+
+	#artPage, #resumePage, #fullImage, #portfolioPage {
+		width:800px;
+		margin:20px auto 30px;
+		background-color:#FFF;
+		box-shadow:5px 5px 5px #000;
+		border:2px solid #000;
+		position: absolute;
+		top: 0;
+		z-index: 100;
+		visibility: hidden;
+		opacity: 0;
+
+		&.showArt, &.showResume, &.showFullImage, &.showPortfolio {
+			visibility: visible;
+			opacity: 1;
+			-webkit-transition: opacity .7s ease-in;
+			-moz-transition: opacity .7s ease-in;
+			-o-transition: opacity .7s ease-in;
+			transition: opacity .7s ease-in;
+		}
+
+		&.hideArt, &.hideResume, &.hideFullImage, &.hidePortfolio {
+			visibility: hidden;
+			opacity: 0;
+			-webkit-transition: all 1s ease-in;
+			-moz-transition: all 1s ease-in;
+			-o-transition: all 1s ease-in;
+			transition: all 1s ease-in;
+		}
+	}
+	html.ie7 #artwork img {
+		display:block;
+	}
+	#artPage.dynamic-content h1 {
+	    display: block;
+	    float: none;
+	    margin-left: 50px;
+	    padding:0;
+	}
+	#artPage a, html.ie8 #artPage a , html.ie7 #artwork a {
+		color:#666;
+	}
+	html.ie8 #artPage, html.ie7 #artPage  {
+		margin:0 auto;
+		display:block;
+	}
+	#artPage article {
+	    display: inline-block;
+	    margin: 0 -26px 37px 50px;
+	    text-align: center;
+	    width: 150px;
+	}
+	#artPage article a {
+		text-decoration:none;
+		color:#666;
+	}
+	html.ie7 #artPage, html.ie8 #artPage {
+		position:relative;	
+		overflow:visible;
+	}
+	html.ie7 #artPage img.dropshadow, html.ie8 #artPage img.dropshadow {
+		background-image:url("http://images.shaunbloom.com//drop-shadow-thumb.png");
+		position:absolute;
+		top:5px;
+		left:5px;
+		display:block;
+		height:161px;
+		width:150px;
+	}
+	#artPage footer {
+		margin-top: 10px;
+		color: #666;
+		font-size: 1em;
+	}
+	#artPage article a.purchase-link {
+		text-decoration:none;
+		color: #0099ff;
+		font-size: .8em;
+	}
+	#artPage article hr {
+	    margin: 1px 0;
+	}
+	#artPage article img {
+	    border: 1px solid #000000;
+	    box-shadow: 5px 5px 5px #000000;
+		cursor:pointer;
+	}
+	#artPage article img:hover {
+	    box-shadow: 2px 2px 2px #000000;
+	    position: relative;
+		left: 2px;
+	    top: 2px;
+	}
+	/********END ART*********/
+
+	/********START FULL IMAGE*********/
+
+	#fullImage {
+		full-image {
+			width: 800px;
+			height: auto;
+		}
+
+		#original-thumb {
+			position:absolute;
+			top:10px;
+			left:10px;
+			z-index:3;
+			box-shadow: 5px 5px 4px 0 #000;
+
+			img {
+				height: 195px;
+	    		width: 155px;
+			}
+		}
+	}
+
+	/********END FULL IMAGE*********/
+
+
+	/*******START RESUME********/
+	#resumePage {
+	    background: none repeat scroll 0 0 #FFFFFF;
+	    border: 2px solid #000000;
+	    box-shadow: 5px 5px 5px #000000;
+	    display: block;
+	    margin: 20px auto 30px;
+	    overflow: hidden;
+	    padding: 0 50px 20px;
+	    width: 800px;
+	    color: #666;
+
+	    h1 {
+	        display: block;
+		    float: none;
+		    padding: 0;
+		    color: #666;
+		    font-size: 24px;
+
+		    a {
+		        font-size: 16px;
+    			text-decoration: none;
+    			color: blue;
+
+    			&:hover {
+    				text-decoration: underline;
+    			}
+		    }
+	    }
+
+	    ul li {
+			margin-bottom:5px;	
+		}
+
+		.job-employer {
+			clear:both;	
+			display:block;
+			overflow:hidden;
+			margin-bottom:20px;	
+
+			strong {
+				margin-bottom:10px;
+			}
+		}
+	}
+
+	html.ie7 #resumePage p, html.ie7 resumePage div.job-employer, html.ie7 resumePage h1 {
+		margin-bottom:20px;
+	}
+	html.ie7 #resumePage ul li {
+		list-style-image: url("http://images.shaunbloom.com//disc.png");
+		width:700px;
+	}
+	html.ie7 #resumePage article {
+		width:800px;
+	}
+	html.ie8 #resumePage  {
+		margin:0 auto;
+	}
+	html.ie7 #resumePage  {
+		margin-top:0;
+	}
+	/********END RESUME*********/
+
+	#close {
+		background: url("http://images.shaunbloom.com//close-button.png") no-repeat scroll 0 0 transparent;
+	    cursor: pointer;
+	    display: block;
+	    height: 34px;
+	    position: absolute;
+	    right: 10px;
+	    width: 34px;
+	    z-index: 3;
+	    top: 10px
+	}
+
+
+	/******* END RESUME ********/
+
+	/*******START PORTFOLIO********/
+	#portfolioPage {
+	    background: none repeat scroll 0 0 #FFFFFF;
+	    border: 2px solid #000000;
+	    box-shadow: 5px 5px 5px #000000;
+	    display: block;
+	    margin: 20px auto 30px;
+	    overflow: hidden;
+	    padding: 0 50px 20px;
+	    width: 800px;
+	    color: #666;
+
+	    article {
+			position: relative;
+			margin: 75px 0;
+			min-height: 100px;
+
+			&.jqueryVersion {
+				margin: 25px 0 75px;
+			}
+
+			a img {
+				height: 120px;
+				width: 120px;
+				display: inline-block;
+				margin-right: 20px;
+				box-shadow: 4px 4px 20px #000;
+				position: absolute;
+				top: 5px;
+				left: 0px;
+				border: 2px solid #333;
+
+				&:hover {
+					top: 3px;
+					left: 3px;
+					box-shadow: 2px 2px 15px #000;
+				}
+			}				
+
+		    .description {
+		    	font-size: .9em;
+				font-weight: 400;
+				width: 570px;
+				vertical-align: top;
+				position: absolute;
+				top: 0;
+				left: 145px;
+
+				.title {
+					font-weight: bold;
+			    	font-size: 1.7rem;
+				}
+
+				a {
+					i {
+						position: absolute;
+						top: 0;
+						right: 20px;
+						font-size: 1.5em;
+
+						span {
+						    font-size: .7em;
+						    vertical-align: top;
+						    margin: 2px 0 0 5px;
+						    display: inline-block;
+						}
+					}
+				}
+		    }
+		}
+
+		a {
+			color:#666;
+		}
+
+		h1 {
+		    display: block;
+		    float: none;
+		    padding:0;
+		    color: #666;
+		    font-size:24px;
+		}
+	}
+	/********END RESUME*********/
+
+}

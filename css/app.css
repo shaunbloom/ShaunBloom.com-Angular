@@ -1,0 +1,573 @@
+html {
+  overflow-y: scroll;
+}
+.shaunbloomAngular {
+  background: url("http://images.shaunbloom.com//bg3.jpg") 0 0 #0a0a0a fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif !important;
+  color: #FFF;
+  /*******START ART********/
+  /********END ART*********/
+  /********START FULL IMAGE*********/
+  /********END FULL IMAGE*********/
+  /*******START RESUME********/
+  /********END RESUME*********/
+  /******* END RESUME ********/
+  /*******START PORTFOLIO********/
+  /********END RESUME*********/
+}
+.shaunbloomAngular h1,
+.shaunbloomAngular h2,
+.shaunbloomAngular h3,
+.shaunbloomAngular h4,
+.shaunbloomAngular h5,
+.shaunbloomAngular h6,
+.shaunbloomAngular .h1,
+.shaunbloomAngular .h2,
+.shaunbloomAngular .h3,
+.shaunbloomAngular .h4,
+.shaunbloomAngular .h5,
+.shaunbloomAngular .h6 {
+  font-family: Verdana, Geneva, sans-serif !important;
+}
+.shaunbloomAngular img {
+  border: none;
+}
+.shaunbloomAngular a {
+  border: none;
+}
+.shaunbloomAngular a:active,
+.shaunbloomAngular a:focus {
+  outline: none;
+}
+.shaunbloomAngular .framework-nav {
+  height: 37px;
+  padding: 5px 0 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -37px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.shaunbloomAngular .framework-nav.loaded {
+  margin-top: 0px;
+  -webkit-transition: margin-top 0.7s ease;
+  -moz-transition: margin-top 0.7s ease;
+  -o-transition: margin-top 0.7s ease;
+  transition: margin-top 0.7s ease-in;
+}
+.shaunbloomAngular .framework-nav ul {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.shaunbloomAngular .framework-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 19%;
+  margin: 0 auto;
+  text-align: center;
+}
+.shaunbloomAngular .framework-nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 4px 4px #000;
+  font-size: 13px;
+}
+.shaunbloomAngular .framework-nav ul li a:hover {
+  color: red;
+}
+.shaunbloomAngular .framework-nav ul li a.selected {
+  font-weight: bold;
+  font-size: 20px;
+}
+.shaunbloomAngular #wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+.shaunbloomAngular .pageTitle {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.shaunbloomAngular header.main-header {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shaunbloomAngular header.main-header nav ul {
+  margin: 0;
+  padding: 0;
+}
+.shaunbloomAngular header.main-header nav ul li {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: #000 5pt 5pt 3pt;
+  text-align: center;
+  padding: 0 43px 0 0;
+  color: #FFF;
+  float: left;
+  *filter: glow(color=black, strength=5);
+}
+.shaunbloomAngular header.main-header nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.shaunbloomAngular header.main-header nav ul li a:hover {
+  color: #F00;
+}
+.shaunbloomAngular header.main-header.fadeComplete {
+  opacity: 1;
+  top: -48px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-box-shadow: all .5s ease;
+  transition: all 0.5s ease-in;
+}
+.shaunbloomAngular #content {
+  border: 1px solid #FFF;
+  width: 700px;
+  height: 0;
+  display: block;
+  z-index: 90;
+  position: relative;
+  margin: 242px auto 0;
+  /******START HOME**********/
+  /*******END HOME***********/
+  /**START COMMON HOME & CONTACT**/
+  /**END COMMON HOME & CONTACT**/
+  /*****START CONTACT********/
+  /******END CONTACT*********/
+}
+.shaunbloomAngular #content.drop-shadow {
+  -moz-box-shadow: 10px 10px 10px #000;
+  -webkit-box-shadow: 10px 10px 10px #000;
+  -o-box-shadow: 10px 10px 10px #000;
+  box-shadow: 0px 20px 100px #000;
+}
+.shaunbloomAngular #content.loaded {
+  height: 402px;
+  -webkit-transition: height 2s ease;
+  -moz-transition: height 2s ease;
+  -o-box-shadow: height 2s ease;
+  transition: height 2s ease;
+}
+.shaunbloomAngular #content #background {
+  background-color: #000000;
+  background-image: url("http://images.shaunbloom.com//face.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  height: 400px;
+  padding: 15px 25px;
+  position: relative;
+  width: 698px;
+  background-position: 377px 0px;
+}
+.shaunbloomAngular #content #background.contentExpanded {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease;
+  -moz-transition: opacity 2s ease;
+  -o-transition: opacity 2s ease;
+  transition: opacity 2s ease;
+}
+.shaunbloomAngular #content #background .showHome,
+.shaunbloomAngular #content #background .showContact {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.shaunbloomAngular #content #background .hideHome,
+.shaunbloomAngular #content #background .hideContact {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.shaunbloomAngular #content #background #twinkle {
+  background: url("http://images.shaunbloom.com//twinkle.png") repeat scroll 0 0 transparent;
+  height: 85px;
+  position: absolute;
+  right: 122px;
+  top: 85px;
+  width: 75px;
+  opacity: 0;
+}
+.shaunbloomAngular #content #background #twinkle.headerPositioned {
+  opacity: 1;
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
+  -o-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+}
+.shaunbloomAngular #content #background #twinkle.twinkleVisible {
+  opacity: 0;
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
+  -o-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+}
+.shaunbloomAngular #content #home {
+  width: 395px;
+}
+.shaunbloomAngular #content #home table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  font-size: 1.6rem;
+  line-height: 21px;
+}
+.shaunbloomAngular #content #home ul,
+.shaunbloomAngular #content #home ul li {
+  margin: 0;
+  padding: 0;
+}
+.shaunbloomAngular #content #home,
+.shaunbloomAngular #content #contactPage {
+  font-size: 1.6rem;
+}
+.shaunbloomAngular #content #home td.name,
+.shaunbloomAngular #content #contactPage td.name {
+  font-weight: bold;
+  line-height: 40px;
+  vertical-align: top;
+  text-align: right;
+  padding-right: 5px;
+}
+.shaunbloomAngular #content #home td.value.pad,
+.shaunbloomAngular #content #contactPage td.value.pad {
+  padding-top: 11px;
+}
+.shaunbloomAngular #content #contactPage {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 18px;
+}
+.shaunbloomAngular #content #contactPage td.name {
+  line-height: 45px;
+}
+.shaunbloomAngular #content #contactPage header.contact-header h1 {
+  margin-top: 25px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.shaunbloomAngular #content #contactPage a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.shaunbloomAngular #content #contactPage a:hover {
+  text-decoration: underline;
+}
+.shaunbloomAngular #content #contactPage nav ul {
+  margin: 0;
+  padding: 0;
+}
+.shaunbloomAngular #content #contactPage nav ul li {
+  display: inline-block;
+}
+.shaunbloomAngular #content #contactPage nav ul li a {
+  background: url("http://images.shaunbloom.com//icon-house.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 25px;
+  padding: 9px 0 0 33px;
+}
+.shaunbloomAngular #content #contactPage nav ul li a:hover {
+  background: url("http://images.shaunbloom.com//icon-house-on.png") no-repeat scroll 0 0 transparent;
+  text-decoration: underline;
+}
+.shaunbloomAngular #artPage {
+  color: #666;
+}
+.shaunbloomAngular #artPage h1 {
+  margin-left: 50px;
+}
+.shaunbloomAngular #artPage,
+.shaunbloomAngular #resumePage,
+.shaunbloomAngular #fullImage,
+.shaunbloomAngular #portfolioPage {
+  width: 800px;
+  margin: 20px auto 30px;
+  background-color: #FFF;
+  box-shadow: 5px 5px 5px #000;
+  border: 2px solid #000;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+.shaunbloomAngular #artPage.showArt,
+.shaunbloomAngular #resumePage.showArt,
+.shaunbloomAngular #fullImage.showArt,
+.shaunbloomAngular #portfolioPage.showArt,
+.shaunbloomAngular #artPage.showResume,
+.shaunbloomAngular #resumePage.showResume,
+.shaunbloomAngular #fullImage.showResume,
+.shaunbloomAngular #portfolioPage.showResume,
+.shaunbloomAngular #artPage.showFullImage,
+.shaunbloomAngular #resumePage.showFullImage,
+.shaunbloomAngular #fullImage.showFullImage,
+.shaunbloomAngular #portfolioPage.showFullImage,
+.shaunbloomAngular #artPage.showPortfolio,
+.shaunbloomAngular #resumePage.showPortfolio,
+.shaunbloomAngular #fullImage.showPortfolio,
+.shaunbloomAngular #portfolioPage.showPortfolio {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in;
+  -moz-transition: opacity 0.7s ease-in;
+  -o-transition: opacity 0.7s ease-in;
+  transition: opacity 0.7s ease-in;
+}
+.shaunbloomAngular #artPage.hideArt,
+.shaunbloomAngular #resumePage.hideArt,
+.shaunbloomAngular #fullImage.hideArt,
+.shaunbloomAngular #portfolioPage.hideArt,
+.shaunbloomAngular #artPage.hideResume,
+.shaunbloomAngular #resumePage.hideResume,
+.shaunbloomAngular #fullImage.hideResume,
+.shaunbloomAngular #portfolioPage.hideResume,
+.shaunbloomAngular #artPage.hideFullImage,
+.shaunbloomAngular #resumePage.hideFullImage,
+.shaunbloomAngular #fullImage.hideFullImage,
+.shaunbloomAngular #portfolioPage.hideFullImage,
+.shaunbloomAngular #artPage.hidePortfolio,
+.shaunbloomAngular #resumePage.hidePortfolio,
+.shaunbloomAngular #fullImage.hidePortfolio,
+.shaunbloomAngular #portfolioPage.hidePortfolio {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+.shaunbloomAngular html.ie7 #artwork img {
+  display: block;
+}
+.shaunbloomAngular #artPage.dynamic-content h1 {
+  display: block;
+  float: none;
+  margin-left: 50px;
+  padding: 0;
+}
+.shaunbloomAngular #artPage a,
+.shaunbloomAngular html.ie8 #artPage a,
+.shaunbloomAngular html.ie7 #artwork a {
+  color: #666;
+}
+.shaunbloomAngular html.ie8 #artPage,
+.shaunbloomAngular html.ie7 #artPage {
+  margin: 0 auto;
+  display: block;
+}
+.shaunbloomAngular #artPage article {
+  display: inline-block;
+  margin: 0 -26px 37px 50px;
+  text-align: center;
+  width: 150px;
+}
+.shaunbloomAngular #artPage article a {
+  text-decoration: none;
+  color: #666;
+}
+.shaunbloomAngular html.ie7 #artPage,
+.shaunbloomAngular html.ie8 #artPage {
+  position: relative;
+  overflow: visible;
+}
+.shaunbloomAngular html.ie7 #artPage img.dropshadow,
+.shaunbloomAngular html.ie8 #artPage img.dropshadow {
+  background-image: url("http://images.shaunbloom.com//drop-shadow-thumb.png");
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  height: 161px;
+  width: 150px;
+}
+.shaunbloomAngular #artPage footer {
+  margin-top: 10px;
+  color: #666;
+  font-size: 1em;
+}
+.shaunbloomAngular #artPage article a.purchase-link{
+  text-decoration:none;
+  color: #0099ff;
+  font-size: .8em;
+}
+.shaunbloomAngular #artPage article hr {
+  margin: 1px 0;
+}
+.shaunbloomAngular #artPage article img {
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 5px #000000;
+  cursor: pointer;
+}
+.shaunbloomAngular #artPage article img:hover {
+  box-shadow: 2px 2px 2px #000000;
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+.shaunbloomAngular #fullImage full-image {
+  width: 800px;
+  height: auto;
+}
+.shaunbloomAngular #fullImage #original-thumb {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  box-shadow: 5px 5px 4px 0 #000;
+}
+.shaunbloomAngular #fullImage #original-thumb img {
+  height: 195px;
+  width: 155px;
+}
+.shaunbloomAngular #resumePage {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px 5px #000000;
+  display: block;
+  margin: 20px auto 30px;
+  overflow: hidden;
+  padding: 0 50px 20px;
+  width: 800px;
+  color: #666;
+}
+.shaunbloomAngular #resumePage h1 {
+  display: block;
+  float: none;
+  padding: 0;
+  color: #666;
+  font-size: 24px;
+}
+.shaunbloomAngular #resumePage h1 a {
+  font-size: 16px;
+  text-decoration: none;
+  color: blue;
+}
+.shaunbloomAngular #resumePage h1 a:hover {
+  text-decoration: underline;
+}
+.shaunbloomAngular #resumePage ul li {
+  margin-bottom: 5px;
+}
+.shaunbloomAngular #resumePage .job-employer {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.shaunbloomAngular #resumePage .job-employer strong {
+  margin-bottom: 10px;
+}
+.shaunbloomAngular html.ie7 #resumePage p,
+.shaunbloomAngular html.ie7 resumePage div.job-employer,
+.shaunbloomAngular html.ie7 resumePage h1 {
+  margin-bottom: 20px;
+}
+.shaunbloomAngular html.ie7 #resumePage ul li {
+  list-style-image: url("http://images.shaunbloom.com//disc.png");
+  width: 700px;
+}
+.shaunbloomAngular html.ie7 #resumePage article {
+  width: 800px;
+}
+.shaunbloomAngular html.ie8 #resumePage {
+  margin: 0 auto;
+}
+.shaunbloomAngular html.ie7 #resumePage {
+  margin-top: 0;
+}
+.shaunbloomAngular #close {
+  background: url("http://images.shaunbloom.com//close-button.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 34px;
+  position: absolute;
+  right: 10px;
+  width: 34px;
+  z-index: 3;
+  top: 10px;
+}
+.shaunbloomAngular #portfolioPage {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px 5px #000000;
+  display: block;
+  margin: 20px auto 30px;
+  overflow: hidden;
+  padding: 0 50px 20px;
+  width: 800px;
+  color: #666;
+}
+.shaunbloomAngular #portfolioPage article {
+  position: relative;
+  margin: 75px 0;
+  min-height: 100px;
+}
+.shaunbloomAngular #portfolioPage article.jqueryVersion {
+  margin: 25px 0 75px;
+}
+.shaunbloomAngular #portfolioPage article a img {
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+  margin-right: 20px;
+  box-shadow: 4px 4px 20px #000;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border: 2px solid #333;
+}
+.shaunbloomAngular #portfolioPage article a img:hover {
+  top: 3px;
+  left: 3px;
+  box-shadow: 2px 2px 15px #000;
+}
+.shaunbloomAngular #portfolioPage article .description {
+  font-size: .9em;
+  font-weight: 400;
+  width: 570px;
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  left: 145px;
+}
+.shaunbloomAngular #portfolioPage article .description .title {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.shaunbloomAngular #portfolioPage article .description a i {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 1.5em;
+}
+.shaunbloomAngular #portfolioPage article .description a i span {
+  font-size: .7em;
+  vertical-align: top;
+  margin: 2px 0 0 5px;
+  display: inline-block;
+}
+.shaunbloomAngular #portfolioPage a {
+  color: #666;
+}
+.shaunbloomAngular #portfolioPage h1 {
+  display: block;
+  float: none;
+  padding: 0;
+  color: #666;
+  font-size: 24px;
+}
