@@ -124,9 +124,9 @@ html {
 .shaunbloomAngular header.main-header.fadeComplete {
   opacity: 1;
   top: -48px;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-box-shadow: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-box-shadow: all 0.5s ease;
   transition: all 0.5s ease-in;
 }
 .shaunbloomAngular #content {
@@ -204,17 +204,17 @@ html {
 }
 .shaunbloomAngular #content #background #twinkle.headerPositioned {
   opacity: 1;
-  -webkit-transition: opacity .7s ease;
-  -moz-transition: opacity .7s ease;
-  -o-transition: opacity .7s ease;
-  transition: opacity .7s ease;
+  -webkit-transition: opacity 0.7s ease;
+  -moz-transition: opacity 0.7s ease;
+  -o-transition: opacity 0.7s ease;
+  transition: opacity 0.7s ease;
 }
 .shaunbloomAngular #content #background #twinkle.twinkleVisible {
   opacity: 0;
-  -webkit-transition: opacity .7s ease;
-  -moz-transition: opacity .7s ease;
-  -o-transition: opacity .7s ease;
-  transition: opacity .7s ease;
+  -webkit-transition: opacity 0.7s ease;
+  -moz-transition: opacity 0.7s ease;
+  -o-transition: opacity 0.7s ease;
+  transition: opacity 0.7s ease;
 }
 .shaunbloomAngular #content #home {
   width: 395px;
@@ -400,10 +400,10 @@ html {
   color: #666;
   font-size: 1em;
 }
-.shaunbloomAngular #artPage article a.purchase-link{
-  text-decoration:none;
+.shaunbloomAngular #artPage article a.purchase-link {
+  text-decoration: none;
   color: #0099ff;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 .shaunbloomAngular #artPage article hr {
   margin: 1px 0;
@@ -445,50 +445,149 @@ html {
   width: 800px;
   color: #666;
 }
-.shaunbloomAngular #resumePage h1 {
-  display: block;
-  float: none;
-  padding: 0;
-  color: #666;
+.shaunbloomAngular #resumePage .title {
   font-size: 24px;
 }
-.shaunbloomAngular #resumePage h1 a {
-  font-size: 16px;
+.shaunbloomAngular #resumePage .download-link {
+  color: #f56942;
+  float: right;
+  font-size: 14px;
   text-decoration: none;
-  color: blue;
+  margin: 1px 5px 0 0;
 }
-.shaunbloomAngular #resumePage h1 a:hover {
+.shaunbloomAngular #resumePage .download-link:hover {
   text-decoration: underline;
 }
-.shaunbloomAngular #resumePage ul li {
-  margin-bottom: 5px;
+.shaunbloomAngular #resumePage header {
+  color: #f56942;
+  font-size: 30px;
+  border-bottom: 1px solid #75706e;
+  margin-bottom: 2px;
+  text-align: center;
+  letter-spacing: 5px;
 }
-.shaunbloomAngular #resumePage .job-employer {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  margin-bottom: 20px;
+.shaunbloomAngular #resumePage header .sub-text {
+  color: #75706e;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: normal;
 }
-.shaunbloomAngular #resumePage .job-employer strong {
+.shaunbloomAngular #resumePage .contact-info {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #5e5b5a;
+  padding: 3px 0;
+}
+.shaunbloomAngular #resumePage .contact-info i {
+  font-size: 17px;
+}
+.shaunbloomAngular #resumePage .contact-info .contact-info-text {
+  font-size: 12px;
+  padding: 0 10px 0 3px;
+}
+.shaunbloomAngular #resumePage .contact-info .contact-info-text a {
+  color: #5e5b5a;
+}
+.shaunbloomAngular #resumePage .resume-body {
+  padding: 0 20px;
+}
+.shaunbloomAngular #resumePage .summary .column-a {
+  float: left;
+  width: 63%;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+.shaunbloomAngular #resumePage .summary .column-a h2 {
+  font-size: 23px;
+  color: #f56942;
+  letter-spacing: 5px;
+  font-weight: normal;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
-.shaunbloomAngular html.ie7 #resumePage p,
-.shaunbloomAngular html.ie7 resumePage div.job-employer,
-.shaunbloomAngular html.ie7 resumePage h1 {
+.shaunbloomAngular #resumePage .summary .column-a .summary-text {
+  font-size: 16px;
   margin-bottom: 20px;
 }
-.shaunbloomAngular html.ie7 #resumePage ul li {
-  list-style-image: url("http://images.shaunbloom.com//disc.png");
-  width: 700px;
+.shaunbloomAngular #resumePage .summary .column-b {
+  float: right;
+  width: 33%;
 }
-.shaunbloomAngular html.ie7 #resumePage article {
-  width: 800px;
+.shaunbloomAngular #resumePage .summary .column-b h2 {
+  font-size: 20px;
+  color: #5e5b5a;
+  letter-spacing: 2px;
+  font-weight: normal;
+  border-bottom: 1px solid #5e5b5a;
+  text-transform: uppercase;
 }
-.shaunbloomAngular html.ie8 #resumePage {
-  margin: 0 auto;
+.shaunbloomAngular #resumePage .summary .column-b ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.shaunbloomAngular html.ie7 #resumePage {
-  margin-top: 0;
+.shaunbloomAngular #resumePage .summary .column-b ul li {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 27px;
+}
+.shaunbloomAngular #resumePage .professional-experience {
+  clear: both;
+}
+.shaunbloomAngular #resumePage .professional-experience .job .company {
+  background-color: #eee;
+  color: #5e5b5a;
+  font-weight: bold;
+  padding: 3px;
+  margin-bottom: 2px;
+  clear: both;
+}
+.shaunbloomAngular #resumePage .professional-experience .job .company span {
+  float: right;
+}
+.shaunbloomAngular #resumePage .professional-experience .job .title {
+  color: #f56942;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+.shaunbloomAngular #resumePage .professional-experience .job .frameworks-tools {
+  color: #5e5b5a;
+  font-style: italic;
+}
+.shaunbloomAngular #resumePage .professional-experience .job .responsibilities ul {
+  list-style-type: square;
+  margin: 5px 0 20px 0;
+}
+.shaunbloomAngular #resumePage .professional-experience .job .responsibilities ul li {
+  padding: 3px 0;
+}
+.shaunbloomAngular #resumePage .additional-engagements span {
+  color: #f56942;
+}
+.shaunbloomAngular #resumePage .special-projects .project {
+  margin: 5px 0;
+}
+.shaunbloomAngular #resumePage .special-projects a {
+  color: #f56942;
+}
+.shaunbloomAngular #resumePage .ongoing-recent .training {
+  margin: 5px 0;
+}
+.shaunbloomAngular #resumePage .professional-experience h2,
+.shaunbloomAngular #resumePage .special-projects h2,
+.shaunbloomAngular #resumePage .ongoing-recent h2 {
+  border-bottom: 1px solid #5e5b5a;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #75706e;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 .shaunbloomAngular #close {
   background: url("http://images.shaunbloom.com//close-button.png") no-repeat scroll 0 0 transparent;
@@ -537,7 +636,7 @@ html {
   box-shadow: 2px 2px 15px #000;
 }
 .shaunbloomAngular #portfolioPage article .description {
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 400;
   width: 570px;
   vertical-align: top;
@@ -556,7 +655,7 @@ html {
   font-size: 1.5em;
 }
 .shaunbloomAngular #portfolioPage article .description a i span {
-  font-size: .7em;
+  font-size: 0.7em;
   vertical-align: top;
   margin: 2px 0 0 5px;
   display: inline-block;
